@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.css">
+    <title>Noble Rot</title>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script src="https://unpkg.com/swup-morph-plugin@1"></script>
+</head>
+<body id="index">
+<div class="container1">
+  <div class="wrapper">
+    <div class="content">
+      <!-- Your content goes here -->
+          <section class="sec1">
+            <div class="rectangle"></div>
+                  <main id="swup" class="transition-fade"> 
+              <div class="navigator">
+                        <a href="index.html" class="active" ><img src="assets/logo3.png" width="81" height="83" alt=""/> </a>
+                      <ul>
+                        <li><a href="project.html" class = "nav-link" >PROJECT</a></li>
+                        <li><a href="portfolio.html" class = "nav-link" >PORTFOLIO</a></li>
+                        <li><a href="about_us.html" class = "nav-link" >ABOUT US</a></li>
+                        <li><a href="#contacts" >CONTACTS</a></li>
+                        <li><a href="@">EN/RU</a></li>
+                      </ul>
+              </div> 
+            </main>
+            <div class="sec_forlogo">  
+              <img src="assets/logo2.png" width="754" height="478" alt=""/>  
+            </div>
+          </section>
+          <section class = "sec2">
+            <h1> Gallery </h1>
+            <p> A little bit of our art </p>
+              <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img src="assets/1.jpg" width="900" height="620" alt=""/></li>
+                    <li class="glide__slide"><img src="assets/2.png" width="900" height="620" alt=""/></li>
+                    <li class="glide__slide"><img src="assets/3.jpg" width="900" height="620" alt=""/></li>
+                    <li class="glide__slide"><img src="assets/4.jpg" width="900" height="620" alt=""/></li>
+                    <li class="glide__slide"><img src="assets/5.jpg" width="900" height="620" alt=""/></li>
+                  </ul>
+                </div>
+              <div class="glide__arrows" data-glide-el="controls">
+                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div>
+              </div>
+            </section>
+            <section class = "sec5" id="contacts">
+              <h2> Contacts </h2>
+              <p2> All company names, brand names, trademarks, logos, illustrations, videos and any other intellectual property (Intellectual Property) published on this website are the property of their respective owners. Any non-authorized usage of Intellectual Property is strictly prohibited and any violation will be prosecuted under the law. </p2>
+              <a class="socialnets1" href="https://vk.com/ktoubilkodjimu"><img src="assets/logo_vk.png" width="45" height="30" alt=""/> </a>
+              </section>
+  </div>
+</div>
+</div>
+  <video preload="auto" autoplay loop muted class="back-video">
+      <source src="assets/Village1.mp4" type="video/mp4">
+  </video>
+<script defer src="interactive.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+  const config = {
+    type:'carousel',
+    perView:2
+  }
+
+  new Glide('.glide').mount()
+</script>
+<!--<script>
+  const swup = new Swup({
+});
+</script>-->
+
+
+</body>
+</html>

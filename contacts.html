@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Noble Rot</title>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script src="https://unpkg.com/swup-morph-plugin@1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="telegramform.js"></script>
+</head>
+<body id="index">
+<div class="container1">
+  <div class="wrapper">
+    <div class="content">
+      <!-- Your content goes here -->
+          <section class="sec8">
+            <div class="rectangle"></div>
+                  <main id="swup" class="transition-fade"> 
+              <div class="navigator">
+                        <a class="logo" href="index.html"><img src="assets/logo3.png" width="81" height="83" alt=""/> </a>
+                      <ul>
+                        <li><a class = "nav-link" href="project.html">PROJECT</a></li>
+                        <li><a class = "nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a class = "nav-link" href="about_us.html">ABOUT US</a></li>
+                        <li><a class = "nav-link" href="contacts.html">CONTACTS</a></li>
+                        <li><a href="@">EN/RU</a></li>
+                      </ul>
+              </div> 
+            </main>
+          </section>
+          <section class = "sec4">
+              <form id="form" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
+              
+                <p class="contact-form__title">Contact us</p>
+              
+                <div class="preloader"></div>
+                <p class="contact-form__message"></p>
+              
+                <!-- Поле с именем -->
+                <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                  <input name="name" type="text" class="contact-form__input contact-form__input_name"
+                        placeholder="Your name">
+                </div>
+              
+                <!-- Поле с телефоном -->
+                <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
+                  <input name="phone" type="tel" class="contact-form__input contact-form__input_phone"
+                        placeholder="Your phone">
+                </div>
+              
+                <!-- Поле с выбором файла -->
+                <div class="contact-form__input-wrapper">
+                  <input type="number" name="number" id="contact-form__input_file"
+                        class="contact-form__input contact-form__input_file" multiple>
+                  <label for="contact-form__input_file" class="contact-form__file-button">
+                    <span class="contact-form__file-text">Full age</span>
+                  </label>
+                </div>
+                <div class="contact-form__input-wrapper_student">
+                  <input type="radio" id="beginner_btn" name="difficulty" value="beginner" checked>
+                  <label for="beginner_btn">Student</label>
+                  </label>
+                  <input type="radio" id="beginner_btn" name="difficulty" value="beginner" checked>
+                  <label for="beginner_btn">Other</label>
+                  </label>
+                </div>
+              
+                <!--Поле с темой в письме-->
+                <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"
+                      value="Заявка с сайта Smartlanding.biz">
+              
+                <!--Кнопка отправки формы-->
+                <button type="submit" class="contact-form__button">Send</button>
+              
+              </form>
+            </section>
+  </div>
+</div>
+</div>
+<script defer src="interactive.js"></script>
+<script defer src="contact_us.js"></script>
+<!--<script>
+  const swup = new Swup({
+});
+</script>-->
+
+
+</body>
+</html>
